@@ -8,6 +8,7 @@
   --soft-violet: #312434;
   --white: #c4bac6;
   --violet-gray: #130734;
+  --cyan-button: #71ffff;
 }
 
 html {
@@ -74,6 +75,7 @@ header {
 header figure {
   width: 25vw;
   display: flex;
+  gap: 0.75rem;
   align-items: center;
   margin-top: 0.5rem;
   margin-left: 0.5rem;
@@ -176,6 +178,17 @@ header #nav-bar ul a:hover {
   display: flex;
   width: 50%;
   gap: 1rem;
+}
+
+#submit, .apply-cta {
+  text-decoration: none;
+  padding: 0.2rem;
+  background-color: var(--cyan-button);
+  transition: background-color 0.5s;
+}
+#submit:hover, .apply-cta:hover {
+  cursor: pointer;
+  background-color: darkcyan;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,11 @@
+#submit, .apply-cta {
+    text-decoration: none;
+    padding:.2rem;
+    background-color: var(--cyan-button);
+    transition: background-color .5s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: darkcyan;
+    }
+}
