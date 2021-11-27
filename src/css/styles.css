@@ -26,6 +26,11 @@ html {
   padding: 0;
 }
 
+body {
+  background: #070424;
+  background: linear-gradient(180deg, #070424 28%, #130734 65%, #581b2e 99%);
+}
+
 :root {
   --title-tp: "Yantramanav", "Arial";
   --paragraph-tp: "Yantramanav", "Arial";
@@ -61,7 +66,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -126,6 +131,17 @@ header #nav-bar ul a:hover {
   text-decoration: none;
 }
 
+#features-container {
+  margin-top: 5rem;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-items: center;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -143,6 +159,11 @@ header #nav-bar ul a:hover {
 .hero-container form input, .hero-container form label {
   font-size: inherit;
   line-height: inherit;
+}
+
+.feature {
+  display: flex;
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
