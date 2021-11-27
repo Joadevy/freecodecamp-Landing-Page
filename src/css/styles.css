@@ -199,12 +199,34 @@ footer p {
   width: 1px;
 }
 
-.hero-container form {
+.hero-container .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 45%;
+}
+.hero-container .hero-text form {
   text-decoration: none;
 }
-.hero-container form input, .hero-container form label {
+.hero-container .hero-text form input, .hero-container .hero-text form label {
   font-size: inherit;
   line-height: inherit;
+  width: 45%;
+}
+.hero-container .hero-text form #email {
+  padding: 0.25rem;
+  background-color: transparent;
+  border: none;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.hero-container .hero-text form #email:focus {
+  outline: 1.5px outset rgba(113, 255, 255, 0.67);
+  outline-offset: 0.25px;
+}
+.hero-container .hero-text form input[Type=submit] {
+  margin-top: 0.25rem;
+  width: 25%;
 }
 
 .feature {

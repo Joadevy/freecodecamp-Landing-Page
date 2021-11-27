@@ -1,9 +1,34 @@
 .hero-container {
-    form {
-        text-decoration: none;
-        input,label {
-            font-size: inherit;
-            line-height: inherit;
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 45%;
+        form {
+            text-decoration: none;
+            input,label {
+                font-size: inherit;
+                line-height: inherit;
+                width: 45%;
+            }
+
+            #email {
+                padding: .25rem;
+                background-color: transparent;
+                border: none;
+                border: 1px solid var(--white);
+                color: var(--white);
+
+                &:focus {
+                    outline: 1.5px outset rgba(113,255,255,0.67);
+                    outline-offset: .25px;
+                }
+            }
+
+            input[Type="submit"]{
+                margin-top: .25rem;
+                width: 25%;
             }
         }
+    }
 }
