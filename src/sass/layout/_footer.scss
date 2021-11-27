@@ -1,0 +1,28 @@
+footer {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: var(--white);
+    padding: .5rem;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: .75rem;
+        a {
+            text-decoration: none;
+            color:inherit;
+
+            &:hover {
+                text-decoration: underline;
+                color: var(--cyan-button);
+            }
+        }
+    }
+
+    p {
+        align-self: flex-end;
+        opacity: .7;
+    }
+}
