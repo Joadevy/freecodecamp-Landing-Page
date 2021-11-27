@@ -36,11 +36,17 @@
 #how-start {
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 
     #video {
         width: 50%;
         text-align: center;
         border: 1px solid white;
     }
+}
+
+#job-posts {
+    display: flex;
+    gap: 2rem;
+    padding: 0 10rem;
 }

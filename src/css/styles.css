@@ -147,12 +147,18 @@ header #nav-bar ul a:hover {
 #how-start {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 #how-start #video {
   width: 50%;
   text-align: center;
   border: 1px solid white;
+}
+
+#job-posts {
+  display: flex;
+  gap: 2rem;
+  padding: 0 10rem;
 }
 
 .sr-only {
@@ -178,6 +184,36 @@ header #nav-bar ul a:hover {
   display: flex;
   width: 50%;
   gap: 1rem;
+}
+
+.job-card {
+  width: 33%;
+  border: 1px solid var(--cyan-button);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  padding: 1rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+.job-card .job-header {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+.job-card .salary {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.job-card .apply-cta {
+  position: absolute;
+  padding: 0.4rem;
+  display: block;
+  width: 50%;
+  bottom: 5%;
+  right: 25%;
 }
 
 #submit, .apply-cta {
