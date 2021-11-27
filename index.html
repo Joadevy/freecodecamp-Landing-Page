@@ -25,16 +25,16 @@
 
     <main>
 
-        <section class="hero-container">
+        <article class="hero-container">
             <h1>Jump into the crypto-working world</h1>
-            <form action="https://www.freecodecamp.org/email-submit" class="form-container">
+            <form action="https://www.freecodecamp.org/email-submit" id="form">
                 <label for="email">Suscribe to our newsletter</label>
-                <input id="email" type="email" placeholder="Type your email adress" required>
+                <input id="email" name="user-email" type="email" placeholder="Type your email adress" required>
                 <input type="submit" value="Suscribe" id="submit">
             </form>
-         </section>
+        </article>
 
-         <section id="features-container">
+         <article id="features-container">
             <h2 class="sr-only">This is a section for our features and benefits</h2>
             <div class="feature">
                 <div class="img-feature"></div>
@@ -51,53 +51,61 @@
                 <h3>Simple, transparent</h3>
                 <p>No hidden fees, add-ons, or tiered plans, you can contact directly with the company in a private session. We take care of it.</p>
             </div>
-         </section>
+        </article>
 
         <iframe id="video" width="480" height="315" src="https://www.youtube.com/embed/15mnBdWy0BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
 
-        <section id="job-posts">
+        <article id="job-posts">
             <h2 class="sr-only">This is a section for our currently job posts</h2>
 
-            <article class="job-card">
+            <section class="job-card">
                 <div class="job-header">
                     <div class="job-logo">
-                    <img src="/src/assets/job-logos/ada.svg" alt="Logo of the company 'Cardano Foundation' that are hiring for a employer.">
+                    <img src="src/assets/job-logos/ada.svg" alt="Logo of the company 'Cardano Foundation' that are hiring for a employer.">
                 </div>
                     <h3 class="job-name">Solidity Engineer</h3>
                 </div>
                 <h4>$5500</h4>
                 <p>We are looking for an experienced smart contract engineer to help us build the next generation of AMMs!</p>
                 <button class="apply-cta">Apply Now</button>
-            </article>
+            </section>
 
-            <div class="job-card">
+            <section class="job-card">
                 <div class="job-header">
                     <div class="job-logo">
-                        <img src="/src/assets/job-logos/eth.svg" alt="Logo of the company 'Ethereum Foundation' that are hiring for a employer.">
+                        <img src="src/assets/job-logos/eth.svg" alt="Logo of the company 'Ethereum Foundation' that are hiring for a employer.">
                     </div>
                     <h3 class="job-name">DevOps Engineer</h3>
                 </div>
                 <h4>$6000</h4>
                 <p>We’re looking for someone excited with helping Ethereum go through the merge. This position would mainly deal with the DevOps needs for the Consensus Layer clients in the lead up to the merge.</p>
                 <button class="apply-cta">Apply Now</button>
-            </article>
+            </section>
 
-            <div class="job-card">
+            <section class="job-card">
                 <div class="job-header">
                     <div class="job-logo">
-                        <img src="/src/assets/job-logos/trx.svg" alt="Logo of the company 'Tron company' that are hiring for a employer.">
+                        <img src="src/assets/job-logos/trx.svg" alt="Logo of the company 'Tron company' that are hiring for a employer.">
                     </div>
                     <h3 class="job-name">Blockchain Engineering Lead</h3>
                 </div>
                 <h4>$4500</h4>
                 <p> We are well funded and looking to grow the blockchain engineering team in anticipation of a version 1 launch.</p>
                 <button class="apply-cta">Apply Now</button>
-            </article>
+            </section>
 
-        </section>
+        </article>
+    </main>
 
-    <footer></footer>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>Copyright, 2021 Jobypto.com</p>
+    </footer>
 </body>
 <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
 </html>
