@@ -32,3 +32,15 @@
     align-items: center;
     justify-items: center;
 }
+
+#how-start {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    #video {
+        width: 50%;
+        text-align: center;
+        border: 1px solid white;
+    }
+}

@@ -142,6 +142,17 @@ header #nav-bar ul a:hover {
   justify-items: center;
 }
 
+#how-start {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+#how-start #video {
+  width: 50%;
+  text-align: center;
+  border: 1px solid white;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -164,6 +175,7 @@ header #nav-bar ul a:hover {
 .feature {
   display: flex;
   width: 50%;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
