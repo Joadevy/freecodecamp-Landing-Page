@@ -1,6 +1,12 @@
 header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
     figure {
         width: 25vw;
         display: flex;
@@ -16,12 +22,12 @@ header {
         figcaption {
             max-width: 55%;
             text-align: center;
+            color: var(--white);
         }
     }
 
     #nav-bar {
         display: flex;
-        border:1px solid black;
         ul {
             display: flex;
             min-width: 40vw;
@@ -30,7 +36,8 @@ header {
             list-style-type: none;
             a{
                 text-decoration: none;
-                color: var(--dark-blue);
+                color: white;
+                scroll-behavior: smooth; //it doesn't work ¿Why? 
 
                 &:hover {
                     text-decoration: underline;
