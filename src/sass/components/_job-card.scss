@@ -30,3 +30,15 @@
         right: 25%;
     }
 }
+
+@media screen and (max-width:768px) {
+    .job-card {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:488px) {
+    .job-card {
+        width: 100%;
+    }
+}

@@ -32,3 +32,33 @@
         }
     }
 }
+
+@media screen and (max-width:1024px) {
+    .hero-container {
+        .hero-text {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero-container {
+        .hero-text {
+            width: 100%;
+            form {
+                input,label {
+                    width: 65%;
+                }
+    
+                #email {
+                    padding: .55rem;
+                }
+    
+                input[Type="submit"]{
+                    padding: .7rem;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
