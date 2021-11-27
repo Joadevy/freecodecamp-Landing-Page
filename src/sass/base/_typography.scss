@@ -5,3 +5,30 @@
     --paragraph-tp: 'Yantramanav', 'Arial';
     --logo-tp: 'Oswald', 'comic sans';
 }
+
+h1,h2,h3,h4 {
+    font-family: var(--title-tp);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    font-family: var(--paragraph-tp);
+}
+
+input,label {
+    font-family: var(--paragraph-tp);
+    }
+
+p {
+    font-family: var(--paragraph-tp);
+}
+
+header {
+    figcaption {
+        font-family: var(--logo-tp);
+        font-size: 1.5rem;
+    }
+}

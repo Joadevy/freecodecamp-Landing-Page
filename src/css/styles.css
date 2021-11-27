@@ -1,3 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Yantramanav:wght@400;700&display=swap");
+:root {
+  --vibrant-red: #c7423a;
+  --dark-red: #581b2e;
+  --dark-blue: #070424;
+  --soft-blue:#130734;
+  --violet: #2c0d2b;
+  --soft-violet: #312434;
+  --white: #c4bac6;
+  --violet-gray: #130734;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --title-tp: "Yantramanav", "Arial";
+  --paragraph-tp: "Yantramanav", "Arial";
+  --logo-tp: "Oswald", "comic sans";
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--title-tp);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  font-family: var(--paragraph-tp);
+}
+
+input, label {
+  font-family: var(--paragraph-tp);
+}
+
+p {
+  font-family: var(--paragraph-tp);
+}
+
+header figcaption {
+  font-family: var(--logo-tp);
+  font-size: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header figure {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+header figure .img-container {
+  max-width: 25%;
+}
+header figure .img-container img {
+  width: 100%;
+}
+header figure figcaption {
+  max-width: 55%;
+  text-align: center;
+}
+header #nav-bar {
+  display: flex;
+  border: 1px solid black;
+}
+header #nav-bar ul {
+  display: flex;
+  min-width: 40vw;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+header #nav-bar ul a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+header #nav-bar ul a:hover {
+  text-decoration: underline;
+}
+
 .sr-only {
   border: 0;
   clip: rect(0 0 0 0);
@@ -7,6 +106,14 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.hero-container form {
+  text-decoration: none;
+}
+.hero-container form input, .hero-container form label {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    figure {
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        .img-container {
+            max-width: 25%;
+            img {
+                width: 100%;
+            }
+        }
+        figcaption {
+            max-width: 55%;
+            text-align: center;
+        }
+    }
+
+    #nav-bar {
+        display: flex;
+        border:1px solid black;
+        ul {
+            display: flex;
+            min-width: 40vw;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: var(--dark-blue);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
