@@ -1,5 +1,5 @@
 .hero-container {
-    background-image: url("/src/assets/pattern/bg-image.jpg");
+    background-image: url("/src/assets/pattern/bg-desktop-standard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -55,6 +55,14 @@
 }
 
 @media screen and (max-width:768px) {
+    #how-start {
+        margin-bottom: 7rem;
+    
+        #video {
+            width: 90%;
+        }
+    }
+    
     #job-posts {
         flex-direction: column;
         align-items: center;
@@ -64,6 +72,12 @@
 @media screen and (max-width:488px) {
     #job-posts {
         padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .hero-container {
+        background-image: url("/src/assets/pattern/bg-image-mobile.jpg");
     }
 }
 

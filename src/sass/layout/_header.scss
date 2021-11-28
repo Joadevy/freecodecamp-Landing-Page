@@ -50,3 +50,42 @@ header {
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    header {
+        figure {
+            width: 40vw;
+            .img-container {
+                max-width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                max-width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+header {   
+    position: absolute;
+        figure {
+            width: 100%;
+            .img-container {
+                max-width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+            figcaption {
+                max-width: 80%;
+            }
+        }   
+
+        #nav-bar {
+            display: none;
+        }
+    }
+}
