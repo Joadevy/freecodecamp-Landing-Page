@@ -117,6 +117,9 @@ header #nav-bar ul a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    background: #070424;
+  }
   header figure {
     width: 40vw;
   }
@@ -252,6 +255,13 @@ footer p {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0.25rem;
+  }
+}
 @media screen and (max-width: 375px) {
   footer {
     width: 100%;

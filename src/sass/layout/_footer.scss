@@ -27,6 +27,14 @@ footer {
     }
 }
 
+@media screen and (max-width:600px) {
+    footer {
+        width: 100%;
+        justify-content: space-around;
+        gap: .25rem;
+    }
+}
+
 @media screen and (max-width:375px) {
     footer {
         width: 100%;
