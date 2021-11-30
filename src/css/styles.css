@@ -154,7 +154,7 @@ header #nav-bar ul a:hover {
   }
 }
 .hero-container {
-  background-image: url("/src/assets/pattern/bg-desktop-standard.jpg");
+  background-image: url("../assets/pattern/bg-desktop-standard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
