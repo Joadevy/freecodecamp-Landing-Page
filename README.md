@@ -21,9 +21,9 @@ This is my solution to the [Build a Product Landing Page Challenge](https://www.
 
 - This is the 3/5 challenge of the Responsive Web Certification from freecodecamp. Basically consist on create a product landing page using our creativity and aplying the knowledge adquired on the course. 
 Then I had some requirements to follow in the development process and I have tested an passed all of it.
-I chose to create a landing page for a job-posting service in order to publish recruitment ads for web3. I thought about all the design and it was my first time I did this. It was great and I felt comfortable with the process.
 
 ## My process
+I chose to create a landing page for a job-posting service in order to publish recruitment ads for web3. I thought about all the design and it was my first time I did this. It was great and I felt comfortable with the process.
 
 ### Built with
 
