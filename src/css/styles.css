@@ -111,7 +111,6 @@ header #nav-bar ul {
 header #nav-bar ul a {
   text-decoration: none;
   color: white;
-  scroll-behavior: smooth;
 }
 header #nav-bar ul a:hover {
   text-decoration: underline;
@@ -136,19 +135,31 @@ header #nav-bar ul a:hover {
 }
 @media screen and (max-width: 375px) {
   header {
-    position: absolute;
+    flex-direction: column;
+    align-items: center;
   }
   header figure {
-    width: 100%;
+    min-width: 75%;
   }
   header figure .img-container {
-    max-width: 20%;
+    max-width: 15%;
   }
   header figure .img-container img {
     width: 100%;
   }
   header figure figcaption {
-    max-width: 80%;
+    max-width: 75%;
+  }
+  header #nav-bar ul {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  header {
+    position: absolute;
+  }
+  header figure {
+    width: 100%;
   }
   header #nav-bar {
     display: none;
