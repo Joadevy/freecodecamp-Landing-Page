@@ -91,7 +91,7 @@ header figure .img-container img {
   width: 100%;
 }
 header figure figcaption {
-  max-width: 55%;
+  max-width: 100%;
   text-align: center;
   color: var(--white);
 }
@@ -142,18 +142,27 @@ header #nav-bar .nav__menu a:hover {
     min-width: 75%;
   }
   header figure .img-container {
-    max-width: 15%;
+    max-width: 20%;
   }
   header figure .img-container img {
     width: 100%;
   }
   header figure figcaption {
-    max-width: 75%;
+    max-width: 100%;
   }
   header #nav-bar {
     border-bottom: 1px solid gray;
   }
   header #nav-bar .nav__checkbox {
+    display: none;
+  }
+  header #nav-bar .nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+  }
+  header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+  }
+  header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
   }
   header #nav-bar .nav__toggle {
@@ -163,14 +172,16 @@ header #nav-bar .nav__menu a:hover {
     right: 0;
   }
   header #nav-bar .nav__toggle svg {
-    width: 2rem;
     fill: var(--white);
   }
   header #nav-bar .nav__toggle .close {
     display: none;
+    margin-top: 0.5rem;
+    width: 1.5rem;
   }
   header #nav-bar .nav__toggle .menu {
     margin-top: 0.5rem;
+    width: 2rem;
   }
   header #nav-bar .nav__menu {
     align-items: center;

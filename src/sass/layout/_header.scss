@@ -21,7 +21,7 @@ header {
             }
         }
         figcaption {
-            max-width: 55%;
+            max-width: 100%;
             text-align: center;
             color: var(--white);
         }
@@ -75,13 +75,13 @@ header {
         figure {
             min-width: 75%;
             .img-container {
-                max-width: 15%;
+                max-width: 20%;
                 img {
                     width: 100%;
                 }
             }
             figcaption {
-                max-width: 75%;
+                max-width: 100%;
             }
         }   
 
@@ -90,6 +90,18 @@ header {
 
             .nav__checkbox {
                 display: none;
+
+                &:checked ~ ul.nav__menu li {
+                    display: block;
+                }
+
+                &:checked ~ label.nav__toggle .close {
+                    display: block;
+                }
+
+                &:checked ~ label.nav__toggle .menu {
+                    display: none;
+                }
             }
 
             .nav__toggle{
@@ -99,16 +111,18 @@ header {
                 right: 0;
 
                 svg {
-                    width: 2rem;
                     fill: var(--white); 
                 }
 
                 .close {
                     display: none;
+                    margin-top: .5rem;
+                    width: 1.5rem;
                 }
 
                 .menu {
-                    margin-top: 0.5rem;
+                    margin-top: .5rem;
+                    width: 2rem;
                 }
             }
 
