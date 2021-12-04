@@ -27,7 +27,7 @@ header {
             border-bottom: 1px solid gray;
             display: flex;
             padding-right: 3rem;
-            
+
             .nav__checkbox {
                 display: none;
 
@@ -117,7 +117,10 @@ header {
                .nav__menu {
                    li {
                        &:first-child {
-                           display: none;
+                           margin-right: auto;
+                           figcaption {
+                               display: none;
+                           }
                        }
                    }
                }

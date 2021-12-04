@@ -167,6 +167,9 @@ header a {
     display: none;
   }
   header #nav-bar .nav__menu li:first-child {
+    margin-right: auto;
+  }
+  header #nav-bar .nav__menu li:first-child figcaption {
     display: none;
   }
 }
