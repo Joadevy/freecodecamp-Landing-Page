@@ -67,95 +67,91 @@ header a {
   font-size: 1.25rem;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    background-color: var(--dark-blue);
-  }
-  header figure {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
-    margin-top: 0.5rem;
-  }
-  header figure .img-container {
-    width: 40px;
-  }
-  header figure .img-container img {
-    width: 100%;
-  }
-  header figure figcaption {
-    text-align: center;
-    color: var(--white);
-  }
-  header #nav-bar {
-    width: 100%;
-    border-bottom: 1px solid gray;
-    display: flex;
-    padding-right: 3rem;
-  }
-  header #nav-bar .nav__checkbox {
-    display: none;
-  }
-  header #nav-bar .nav__checkbox:checked ~ ul.nav__menu li {
-    display: block;
-  }
-  header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .close {
-    display: block;
-  }
-  header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .menu {
-    display: none;
-  }
-  header #nav-bar .nav__toggle {
-    position: absolute;
-    cursor: pointer;
-    margin: 0 1rem;
-    right: 0;
-  }
-  header #nav-bar .nav__toggle svg {
-    fill: var(--white);
-  }
-  header #nav-bar .nav__toggle .close {
-    display: none;
-    margin-top: 1.25rem;
-    width: 1.5rem;
-  }
-  header #nav-bar .nav__toggle .menu {
-    margin-top: 1.25rem;
-    width: 2rem;
-  }
-  header #nav-bar .nav__menu {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    gap: 0.25rem;
-    padding: 0.5rem;
-  }
-  header #nav-bar .nav__menu li {
-    display: none;
-  }
-  header #nav-bar .nav__menu li a {
-    text-decoration: none;
-    color: var(--white);
-  }
-  header #nav-bar .nav__menu li a:hover {
-    text-decoration: underline;
-  }
-  header #nav-bar .nav__menu li:first-child {
-    display: block;
-    margin-right: 0;
-  }
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--dark-blue);
 }
+header figure {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+header figure .img-container {
+  width: 40px;
+}
+header figure .img-container img {
+  width: 100%;
+}
+header figure figcaption {
+  text-align: center;
+  color: var(--white);
+}
+header #nav-bar {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding-right: 3rem;
+}
+header #nav-bar .nav__checkbox {
+  display: none;
+}
+header #nav-bar .nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+header #nav-bar .nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+header #nav-bar .nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+}
+header #nav-bar .nav__toggle svg {
+  fill: var(--white);
+}
+header #nav-bar .nav__toggle .close {
+  display: none;
+  margin-top: 1.25rem;
+  width: 1.5rem;
+}
+header #nav-bar .nav__toggle .menu {
+  margin-top: 1.25rem;
+  width: 2rem;
+}
+header #nav-bar .nav__menu {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+header #nav-bar .nav__menu li {
+  display: none;
+}
+header #nav-bar .nav__menu li a {
+  text-decoration: none;
+  color: var(--white);
+}
+header #nav-bar .nav__menu li a:hover {
+  text-decoration: underline;
+}
+header #nav-bar .nav__menu li:first-child {
+  display: block;
+  margin-right: 0;
+}
+
 @media screen and (max-width: 320px) {
   header figure {
     width: 100%;
-  }
-  header #nav-bar {
-    border: none;
   }
   header #nav-bar .nav__checkbox {
     display: none;
@@ -171,6 +167,21 @@ header a {
   }
   header #nav-bar .nav__menu li:first-child figcaption {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  header #nav-bar .nav__toggle {
+    display: none;
+  }
+  header #nav-bar .nav__menu {
+    gap: 0.85rem;
+    flex-direction: row;
+  }
+  header #nav-bar .nav__menu li {
+    display: block;
+  }
+  header #nav-bar .nav__menu li:first-child {
+    margin-right: auto;
   }
 }
 .hero-container {
